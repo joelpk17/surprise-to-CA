@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A gift from Joel 💜</title>
+<meta name="description" content="A little something for Haritha 💜">
+<meta property="og:title" content="A gift from Joel 💜">
+<meta property="og:description" content="Tap to open. You'll need the password 🪔">
+<meta name="theme-color" content="#06030d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💜</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06030d;--v:#8b5cf6;--v2:#c084fc;--v3:#4c1d95;--tx:#f1e9ff;--dim:#b7a6d9}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--tx);font-family:'Nunito',system-ui,sans-serif;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:70vmax;height:70vmax;border-radius:50%;filter:blur(90px);opacity:.35;z-index:0;animation:drift 14s ease-in-out infinite alternate}
+body:before{background:var(--v3);top:-30vmax;left:-25vmax}
+body:after{background:#7e22ce;bottom:-35vmax;right:-25vmax;animation-delay:-7s}
+@keyframes drift{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+.star{position:fixed;z-index:0;color:var(--v2);opacity:.5;animation:tw 4s ease-in-out infinite;pointer-events:none}
+@keyframes tw{50%{opacity:.08;transform:scale(.6)}}
+.s{position:fixed;inset:0;z-index:1;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;padding-top:calc(24px + env(safe-area-inset-top,0px));padding-bottom:calc(24px + env(safe-area-inset-bottom,0px));overflow-y:auto}
+.s.on{display:flex;animation:in .7s cubic-bezier(.2,.8,.2,1)}
+@keyframes in{from{opacity:0;transform:scale(.94) translateY(16px)}}
+h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1}
+h1{font-size:clamp(2.4rem,9vw,4.6rem);background:linear-gradient(120deg,#fff,var(--v2) 50%,var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(1.8rem,6vw,3rem);margin-bottom:12px}
+p.sub{color:var(--dim);margin:14px 0 26px;font-size:1.1rem;max-width:34ch}
+.emoji{font-size:4rem;margin-bottom:10px;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px) rotate(4deg)}}
+button{font:700 1.05rem 'Nunito',sans-serif;color:#fff;background:linear-gradient(135deg,var(--v),#a21caf);border:0;border-radius:999px;padding:14px 34px;cursor:pointer;box-shadow:0 0 0 1px #ffffff22 inset,0 10px 40px -8px var(--v);transition:transform .2s,box-shadow .2s}
+button:hover{transform:translateY(-2px) scale(1.04)}
+button.ghost{background:#ffffff10;box-shadow:0 0 0 1px #ffffff30 inset}
+button.ico{background:none;box-shadow:none;padding:0;font-size:6rem;animation:bob 2.2s ease-in-out infinite}
+button:focus-visible,input:focus-visible{outline:2px solid var(--v2);outline-offset:3px}
+.row{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:8px}
+.name{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.8rem,7vw,3rem);color:var(--v2)}
+.cd{margin:6px 0 24px;padding:8px 18px;border:1px solid #ffffff25;border-radius:999px;color:var(--dim)}
+.cake{font-size:5rem;position:relative;margin:6px 0 4px}
+.flame{position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:2.2rem;animation:fl .5s ease-in-out infinite alternate;transition:opacity .4s}
+.flame.off{opacity:0;animation:none}
+@keyframes fl{to{transform:translateX(-50%) scale(1.15) rotate(4deg)}}
+input{width:min(360px,100%);font:1.05rem 'Nunito',sans-serif;color:var(--tx);background:#ffffff0d;border:1px solid #ffffff2a;border-radius:16px;padding:14px 18px;text-align:center}
+.hint{margin:16px 0 4px;color:var(--v2);font-size:1.05rem}
+.err{min-height:1.4em;margin:8px 0 14px;color:#f0abfc}
+.shake{animation:sh .4s}
+@keyframes sh{25%{transform:translateX(-10px)}75%{transform:translateX(10px)}}
+.bubble{position:relative;background:#ffffff12;border:1px solid #ffffff2a;border-radius:22px;padding:18px 24px;font-size:1.3rem;font-weight:700;max-width:320px;margin:0 0 18px}
+.bubble:after{content:"";position:absolute;bottom:-10px;left:50%;width:18px;height:18px;background:#1a1030;border-right:1px solid #ffffff2a;border-bottom:1px solid #ffffff2a;transform:translateX(-50%) rotate(45deg)}
+.pup{font-size:8rem;animation:bob 1.6s ease-in-out infinite}
+.photo{width:130px;height:130px;border-radius:50%;object-fit:cover;border:3px solid var(--v2);box-shadow:0 0 50px -4px var(--v);margin-bottom:16px}
+.paper{max-width:560px;width:100%;text-align:left;background:linear-gradient(160deg,#ffffff0e,#ffffff05);border:1px solid #ffffff1c;border-radius:22px;padding:30px 26px;backdrop-filter:blur(10px)}
+.paper h2{text-align:center;margin-bottom:22px}
+.paper p{line-height:1.75;margin-bottom:16px;opacity:0;transform:translateY(14px);transition:all .8s ease}
+.paper p.show{opacity:1;transform:none}
+.paper .sig{text-align:right;font-family:'Fraunces',serif;font-style:italic;font-size:1.3rem;color:var(--v2)}
+.top{justify-content:flex-start;padding-top:calc(48px + env(safe-area-inset-top,0px))}
+.bl{position:fixed;bottom:-70px;font-size:2.4rem;z-index:2;pointer-events:none;animation:rise linear forwards}
+@keyframes rise{to{transform:translateY(-120vh) rotate(14deg)}}
+#mute{position:fixed;top:calc(14px + env(safe-area-inset-top,0px));right:14px;z-index:20;padding:10px 14px}
+#cv{position:fixed;inset:0;z-index:15;pointer-events:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<audio id="au" src="love-story.mp3" loop preload="auto"></audio>
+<button id="mute" class="ghost" aria-label="Toggle music">🔇</button>
+<canvas id="cv"></canvas>
+
+<!-- gift -->
+<section class="s on" id="gift">
+  <h1>Here's a gift from Joel</h1>
+  <p class="sub">made only for you 💜</p>
+  <button class="ico" id="giftBtn" aria-label="Open">🎁</button>
+  <p class="sub" style="margin-top:8px">Tap the gift</p>
+</section>
+
+<!-- password -->
+<section class="s" id="pw">
+  <div class="emoji">🔐</div>
+  <h2>Enter the password</h2>
+  <p class="hint">Hint: the word I scolded you with recently 🪔</p>
+  <div class="err" id="err"></div>
+  <input id="pwIn" type="text" placeholder="type it here" autocomplete="off" autocapitalize="none">
+  <div class="row"><button id="unlock">Unlock 💜</button></div>
+</section>
+
+<!-- yes / no -->
+<section class="s" id="ask">
+  <div class="emoji">🦇</div>
+  <h1>HEY!!</h1>
+  <p class="sub">I made something for you. Do you want to see it?</p>
+  <div class="row"><button data-go="ded">Yes 💜</button><button class="ghost" data-go="pup">No</button></div>
+</section>
+
+<!-- puppy -->
+<section class="s" id="pup">
+  <div class="bubble">Click YES da… HOW DARE YOUUH 😾</div>
+  <div class="pup">🐶</div>
+  <div class="row" style="margin-top:24px"><button data-go="ded">Fine… Yes 💜</button></div>
+</section>
+
+<!-- dedication -->
+<section class="s" id="ded">
+  <p class="sub" style="margin:0 0 8px">okay okay, here it is…</p>
+  <h1>To my bestest frienduhh</h1>
+  <div class="name" style="margin:10px 0 28px">Future CA 💜</div>
+  <button data-go="bday">Open it</button>
+</section>
+
+<!-- birthday -->
+<section class="s" id="bday">
+  <div class="cd" id="cd"></div>
+  <div class="cake">🎂<span class="flame" id="fl">🔥</span></div>
+  <h1>Happy Birthday, Haritha!</h1>
+  <p class="sub">October 12th belongs to you. Make a wish, then blow the candle.</p>
+  <div class="row"><button id="blow">Blow the candle 🌬️</button><button data-go="env" id="n3" class="ghost" style="display:none">Next</button></div>
+</section>
+
+<!-- envelope -->
+<section class="s" id="env">
+  <p class="sub" style="margin:0 0 6px">a little something</p>
+  <button class="ico" data-go="letter" aria-label="Open the letter">💌</button>
+  <p class="sub">Tap the envelope</p>
+</section>
+
+<!-- letter 1 -->
+<section class="s top" id="letter">
+  <div class="paper">
+    <h2>Dear Haritha, 💜</h2>
+    <p>Happy Birthday to the most wonderful person who has brought countless smiles into my life. Today is your day, and I hope every moment of it reminds you of how special you truly are. 🎂✨</p>
+    <p>You may not always realize it, but your kindness, your laughter, and your caring heart make the world a little brighter for the people around you, especially for me. 🌸💖</p>
+    <p>Thank you for standing beside me through happy moments, difficult days, and all the little moments in between. Your presence has become one of the greatest blessings in my life. 🌈🤍</p>
+    <p>Every conversation with you has become a memory that I treasure, and every smile you share is something I never take for granted. 😊💫</p>
+    <p>I honestly don't know what the future has planned for us, but I sincerely hope that no matter where life takes us, we continue to stay connected and keep making beautiful memories together. 🌍🌙</p>
+    <p>You have taught me that genuine care, trust, and understanding are among the most precious gifts anyone can receive. 🎁💜</p>
+    <p>On your birthday, I don't wish you only success or happiness. I wish you a life filled with peace, good health, endless laughter, and people who always value you for the amazing person you are. 🌹✨</p>
+    <p>Whenever life becomes difficult, I hope you remember that you are stronger than you think and more loved than you realize. 🌻💪</p>
+    <p>Thank you for accepting me with all my imperfections and for being someone I can always count on. 🤗💕</p>
+    <p>I promise to always cheer for your dreams, celebrate your victories, and support you whenever you need a friend. 🌟🎉</p>
+    <p>I hope this birthday becomes the beginning of one of the happiest chapters of your life. May your smile never fade, your heart never lose hope, and your dreams always find their way to reality. 🌠💖</p>
+    <p>No matter how many birthdays come and go, I hope this friendship continues to grow stronger with every passing year. If life ever gives us different paths, I hope those paths always find a way to cross again. 🫶🛤️</p>
+    <p>Thank you for being my Haritha, the person who unknowingly made ordinary days feel extraordinary. 🐰💜</p>
+    <p>Today, I simply want you to smile, laugh without limits, and enjoy every second because you truly deserve all the happiness in the world. 🎂🎈🎁</p>
+    <p>Always remember that there will always be someone cheering for you, believing in you, and wishing the very best for you. Happy Birthday once again, Future CA. 🌙✨</p>
+    <p class="sig">With lots of love, gratitude, and endless best wishes,<br>Joel 💜</p>
+    <div class="row"><button data-go="hug">Continue 🤍</button></div>
+  </div>
+</section>
+
+<!-- hug -->
+<section class="s" id="hug">
+  <img class="photo" id="photo" src="haritha.jpg" alt="Haritha" onerror="this.style.display='none'">
+  <div class="emoji" style="font-size:6rem">🫂</div>
+  <h1>A big virtual hug</h1>
+  <p class="sub">Happy Birthday, Haritha. Stay happy, stay you. 💜</p>
+  <div class="row"><button data-go="love">One more thing 💌</button></div>
+</section>
+
+<!-- letter 2 -->
+<section class="s top" id="love">
+  <div class="paper">
+    <h2>For you, Future CA 💜</h2>
+    <p>You are the person I trust the most. 💜</p>
+    <p>Nee enakku romba pudikum. 🥹🌸</p>
+    <p>Nee eppovum happy-ah irukkanum. 😊✨</p>
+    <p>Unakku enna kashtam nu naalum, naan unkooda irupen. Enkitta edhu irundhaalum sollu. I am not here to judge you. 🤍🫂</p>
+    <p>And you were the person who motivated me, no matter how tough things were. Thank you so much for being with me. 🥺💫</p>
+    <p>For real, I am so lucky to have you as my bestest friend. 🌟🫶</p>
+    <p>I wish you to be with me for my whole lifetime, and I wish you a great career in your dream. You will be a Future CA! 📚🏆✨</p>
+    <p class="sig">Always yours (as a friend 😌),<br>Joel 💜</p>
+    <div class="row"><button class="ghost" onclick="location.reload()">Watch again 🔁</button></div>
+  </div>
+</section>
+
+<script>
+const $=id=>document.getElementById(id);
+const PASSWORD='lampoil';            // change here if needed (spaces/case ignored)
+
+function go(id){
+  document.querySelectorAll('.s').forEach(s=>s.classList.remove('on'));
+  const el=$(id);el.classList.add('on');el.scrollTop=0;
+  if(id==='letter'||id==='love')reveal(el);
+  if(id==='hug')burst(180);
+  if(id==='bday')balloons();
+}
+document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
+
+// stars
+for(let i=0;i<34;i++){
+  const s=document.createElement('span');s.className='star';s.textContent=['✦','✧','·','✨'][i%4];
+  s.style.cssText=`left:${Math.random()*100}vw;top:${Math.random()*100}vh;font-size:${8+Math.random()*16}px;animation-delay:${Math.random()*4}s;animation-duration:${3+Math.random()*4}s`;
+  document.body.appendChild(s);
+}
+
+// music
+const au=$('au'),mu=$('mute');let on=false;
+function setMusic(v){on=v;mu.textContent=v?'🔊':'🔇';v?au.play().catch(()=>{on=false;mu.textContent='🔇'}):au.pause()}
+mu.onclick=()=>setMusic(!on);
+
+// gift -> password
+$('giftBtn').onclick=()=>{setMusic(true);burst(80);go('pw')};
+let tries=0;
+function check(){
+  const v=$('pwIn').value.toLowerCase().replace(/\s/g,'');
+  if(v===PASSWORD){burst(120);go('ask')}
+  else{tries++;$('err').textContent=tries>1?'Still no 😅 Clue: it starts with L 🪔':'Nope, think again 🪔';const i=$('pwIn');i.classList.remove('shake');void i.offsetWidth;i.classList.add('shake')}
+}
+$('unlock').onclick=check;
+$('pwIn').addEventListener('keydown',e=>{if(e.key==='Enter')check()});
+
+// countdown to Oct 12
+(function(){
+  const n=new Date(),today=new Date(n.getFullYear(),n.getMonth(),n.getDate());
+  let t=new Date(n.getFullYear(),9,12);if(today>t)t=new Date(n.getFullYear()+1,9,12);
+  const d=Math.round((t-today)/864e5);
+  $('cd').textContent=d===0?"🎉 It's today! 🎉":d===1?'Tomorrow is your day ✨':`${d} days to Oct 12 ✨`;
+})();
+
+$('blow').onclick=()=>{$('fl').classList.add('off');burst(140);$('blow').style.display='none';$('n3').style.display='inline-block'};
+
+// letter reveal
+function reveal(root){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');if(e.target.classList.contains('sig'))burst(120);io.unobserve(e.target)}}),{root,threshold:.25});
+  root.querySelectorAll('.paper p').forEach(p=>io.observe(p));
+}
+
+// balloons
+function balloons(){
+  ['🎈','💜','🎈','🪩','🎈','💜'].concat(['🎈','💜','🎈','✨']).forEach((c,i)=>{
+    const b=document.createElement('span');b.className='bl';b.textContent=c;
+    b.style.left=Math.random()*92+'vw';b.style.animationDuration=(6+Math.random()*5)+'s';b.style.animationDelay=(i*.5)+'s';
+    b.onanimationend=()=>b.remove();document.body.appendChild(b);
+  });
+}
+// sparkle trail
+addEventListener('pointermove',e=>{
+  if(Math.random()<.5)return;
+  ps.push({x:e.clientX,y:e.clientY,vx:(Math.random()-.5)*2,vy:-Math.random()*1.5,r:2+Math.random()*2,c:'#e9d5ff',a:.9,f:.04,rot:0});
+  if(!run){run=true;tick()}
+});
+// confetti
+const cv=$('cv'),cx=cv.getContext('2d');let ps=[],run=false;
+function fit(){cv.width=innerWidth;cv.height=innerHeight}fit();addEventListener('resize',fit);
+function burst(n){
+  const cols=['#8b5cf6','#c084fc','#e879f9','#ffffff','#a78bfa','#f0abfc'];
+  for(let i=0;i<n;i++)ps.push({x:innerWidth/2,y:innerHeight*.55,vx:(Math.random()-.5)*16,vy:-Math.random()*16-4,r:3+Math.random()*5,c:cols[i%6],a:1,rot:Math.random()*6});
+  if(!run){run=true;tick()}
+}
+function tick(){
+  cx.clearRect(0,0,cv.width,cv.height);
+  ps.forEach(p=>{p.vy+=.35;p.x+=p.vx;p.y+=p.vy;p.vx*=.99;p.a-=p.f||.008;p.rot+=.15;
+    cx.globalAlpha=Math.max(p.a,0);cx.fillStyle=p.c;cx.save();cx.translate(p.x,p.y);cx.rotate(p.rot);cx.fillRect(-p.r,-p.r/2,p.r*2,p.r);cx.restore()});
+  ps=ps.filter(p=>p.a>0&&p.y<cv.height+20);
+  ps.length?requestAnimationFrame(tick):(run=false,cx.clearRect(0,0,cv.width,cv.height));
+}
+</script>
+</body>
+</html>
